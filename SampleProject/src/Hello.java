@@ -1,4 +1,3 @@
-
 import java.io.IOException;
 public class Hello {
 void m() throws IOException
