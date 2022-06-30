@@ -1,5 +1,4 @@
 package MultiThreading1;
-
 public class Producer extends Thread {
 	InterThreadCommunication obj;
 
