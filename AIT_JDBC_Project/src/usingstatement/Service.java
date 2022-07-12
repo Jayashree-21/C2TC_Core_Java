@@ -26,7 +26,7 @@ void addStudent() throws SQLException
 	
 }
 
- void getStudent() throws SQLException
+ //void getStudent() throws SQLException
 {
 	String sql="select * from student";
 	ResultSet rs=st.executeQuery(sql);
@@ -39,7 +39,7 @@ void addStudent() throws SQLException
 		System.out.println(rs.getDate(4));
 	}
 }
-void updateStudent() throws SQLException
+ void updateStudent() throws SQLException
 {
 	String sql="update student set branch='cs' where sid=103 ";
 	int b=st.executeUpdate(sql);
@@ -61,6 +61,6 @@ public void closeSession()
 		  } 
 	  catch(Exception e) {
 	  System.out.println(e); 
-	  }
+	  }//
  }
 }
