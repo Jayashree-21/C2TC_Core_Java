@@ -23,6 +23,10 @@ void addStudent() throws SQLException
 	int row=st.executeUpdate(sql);
 	System.out.println(row + "row"+ "afftected");
 	
+	String sql1 ="insert into student(sid,sname,branch,yop) values(103,'Teja','ECE','2022-07-30')";
+	int row1=st.executeUpdate(sql1);
+	System.out.println(row1 + "row"+ "afftected");
+	
 	
 }
 
