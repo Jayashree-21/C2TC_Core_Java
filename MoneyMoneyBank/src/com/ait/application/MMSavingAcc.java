@@ -8,29 +8,21 @@ public class MMSavingAcc extends SavingAcc {
 		super(accNo, accNm, accBal, isSalaried);
 		// TODO Auto-generated constructor stub
 	}
-
-    private static final float MINBAL=0;
-
-	private static float getMinbal() {
-		return MINBAL;
-	}
 	
-	@Override
 	public void withdraw(float accBal)
 	{
 		
+		
+		
+		System.out.println("Witdraw accBal:" +getAccBal() );
 	}
-
 	@Override
 	public String toString() {
-		return "MMSavingAcc [accNo=" + accNo + ", accNm=" + accNm + ", accBal=" + accBal + "]";
+		return "MMSaingAcc [isSalary()=" + isSalaried() + ", toString()=" + super.toString() + ", getAccNo()=" + ", getAccNm()=" +getAccNm() + ", getAccBal()=" + getAccBal() + "	]";
+
+	
+	
+	
+	
 	}
-	
-	
-	
-	
-	
-
-	
-
 }

@@ -12,13 +12,10 @@ public class MMCurrentAcc extends CurrentAcc {
 
 	@Override
 	public void withdraw(float accBal) {
+	System.out.println("CurrentAcc bal is: " +getAccBal()+"CreditLimit" +getCreditLimit());
 }
 
-	@Override
-	public String toString() {
-		return "MMCurrentAcc [accNo=" + accNo + ", accNm=" + accNm + ", accBal=" + accBal + "]";
-	}
-
+	
 	
 	
 	

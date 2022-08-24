@@ -2,20 +2,20 @@ package com.ait.framework;
 
 public class SavingAcc extends BankAcc  {
 	private boolean isSalaried;
-	private static final float MINBAL=0;
+	private static final float creditLimit=0;
 	
-	private boolean isSalaried() {
+	protected boolean isSalaried() {
 		return isSalaried;
 	}
     private void setSalaried(boolean isSalaried) {
 		this.isSalaried = isSalaried;
 	}
-    private static float getMinbal() {
-		return MINBAL;
+    private static float getcreditLimit() {
+		return creditLimit;
 	}
    
 	public SavingAcc(int accNo, String accNm, float accBal,boolean isSalaried) {
-		super();
+		super(accNo, accNm, accBal);
 		this.isSalaried = isSalaried;
 	}
 @Override
@@ -24,7 +24,10 @@ public void withdraw(float accBal) {
 }
 @Override
 public String toString() {
-	return "SavingAcc [accNo=" + accNo + ", accNm=" + accNm + ", accBal=" + accBal + ", isSalaried=" + isSalaried + "]";
+	
+	String isSalary = null;
+	return "SavingAcc [isSalary=" +  isSalary + " ,getAccNo() =" + getAccNo() + ", getAccNm()=" + getAccNm() + ", getAccBal()=" + getAccBal() + "     ]";
+}
 }
 
 
@@ -33,4 +36,3 @@ public String toString() {
 	
 	
 	
-}

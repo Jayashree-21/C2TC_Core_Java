@@ -30,7 +30,7 @@ void addStudent() throws SQLException
 	
 }
 
- //void getStudent() throws SQLException
+  /*void getStudent() throws SQLException
 {
 	String sql="select * from student";
 	ResultSet rs=st.executeQuery(sql);
@@ -65,6 +65,6 @@ public void closeSession()
 		  } 
 	  catch(Exception e) {
 	  System.out.println(e); 
-	  }//
- }
+	  } 
+ }*/
 }

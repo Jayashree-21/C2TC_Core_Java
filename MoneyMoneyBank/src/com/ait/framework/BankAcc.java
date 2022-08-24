@@ -1,15 +1,33 @@
 package com.ait.framework;
 
-public  abstract class BankAcc {
-	protected int accNo;
+public  class BankAcc {
+	protected int  accNo;
 	protected String accNm;
 	protected float accBal;
+	
+	
 
-	private int getAccNo() {
+	/**
+	 * @param accNo
+	 * @param accNm
+	 * @param accBal
+	 */
+	public BankAcc(int accNo, String accNm, float accBal) {
+		super();
+		this.accNo = accNo;
+		this.accNm = accNm;
+		this.accBal = accBal;
+	}
+
+	public void BankAcc(int accNo2, String accNm2, float creditLimit) {
+		// TODO Auto-generated constructor stub
+	}
+
+	protected int getAccNo() {
 		return accNo;
 	}
 	
-	private String getAccNm() {
+	public String getAccNm() {
 		return accNm;
 	}
 	private void setAccNm(String accNm) {
@@ -18,7 +36,8 @@ public  abstract class BankAcc {
 	public float getAccBal() {
 		return accBal;
 	}
-	abstract public void withdraw(float accBal);
+	public void withdraw(float accBal) {
+	}
 	//abstract public void deposit(float accBal);
 	@Override
 	public String toString() {
